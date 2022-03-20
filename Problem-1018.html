@@ -1,0 +1,24 @@
+<meta charset="UTF-8"> 
+
+<script>
+
+var valor = parseFloat(prompt('Digite o valor'))
+
+var nota100 = Math.trunc(valor/100)
+var nota50 = Math.trunc((valor%100)/50)
+var nota20 = Math.trunc(((valor%100)%50)/20)
+var nota10 = Math.trunc((((valor%100)%50)%20)/10)
+var nota5 = Math.trunc(((((valor%100)%50)%20)%10)/5)
+var nota2 = Math.trunc((((((valor%100)%50)%20)%10)%5)/2)
+var nota1 = Math.trunc(((((((valor%100)%50)%20)%10)%5)%2)/1)
+
+console.log(valor)
+console.log(nota100+" nota(s) de R$ 100,00")
+console.log(nota50+" nota(s) de R$ 50,00")
+console.log(nota20+" nota(s) de R$ 20,00")
+console.log(nota10+" nota(s) de R$ 10,00")
+console.log(nota5+" nota(s) de R$ 5,00")
+console.log(nota2+" nota(s) de R$ 2,00")
+console.log(nota1+" nota(s) de R$ 1,00")
+
+</script> 

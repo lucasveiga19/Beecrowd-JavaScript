@@ -1,0 +1,13 @@
+<meta charset="UTF-8"> 
+
+<script>
+
+var tempo = parseInt(prompt('Digite o valor do tempo'))
+
+var horas = Math.trunc(tempo/3600)
+var minutos = Math.trunc((tempo%3600)/60)
+var segundos = Math.trunc((tempo%3600)%60)
+
+console.log(horas+":"+minutos+":"+segundos)
+
+</script>
