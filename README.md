@@ -5,3 +5,5 @@
 * var prompt = function(texto) { return lines.shift();};
 
 ![BeeCrowd](https://user-images.githubusercontent.com/58401882/161648767-a34fd046-dd1b-4ec4-81e4-73d8d592c2bb.JPG)
+
+### Para validar as informações dentro do html basta pegar todo contéudo dentro do código <script> //Tudo aqui </script> , ignorando o "<script>" e colocando no beecrowd no número do problema específico.
