@@ -1,0 +1,29 @@
+<meta charset="UTF-8"> 
+
+<script>
+
+var [A, B] = prompt('Digite os valores').split(" ");
+
+var A = parseFloat(A);
+var B = parseFloat(B);
+
+if (A == 1){
+    var C = parseFloat(4.00 * B);
+    console.log("Total: R$ "+C.toFixed(2));
+} else if (A == 2){
+    var XS = parseFloat(4.50 * B);
+    console.log("Total: R$ "+XS.toFixed(2));
+} else if (A == 3){
+    var XB = parseFloat(5.00 * B);
+    console.log("Total: R$ "+XB.toFixed(2));
+} else if (A == 4){
+    var T = parseFloat(2.00 * B);
+    console.log("Total: R$ "+T.toFixed(2));
+} else if (A == 5){
+    var R = parseFloat(1.50 * B);
+    console.log("Total: R$ "+R.toFixed(2));
+} else {
+    console.log("Invalido");
+}
+
+</script>
