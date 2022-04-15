@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+
+var entrada = parseInt(prompt("Digite a quantidade de valores:"));
+
+for(cont=0; cont<entrada; cont++){
+    var [A, B, C] = prompt("Digite os valores:").split(" ");
+    var A = parseFloat(A);
+    var B = parseFloat(B);
+    var C = parseFloat(C);
+
+    var media = (((A*2.0)+(B*3.0)+(C*5.0))/10.0);
+    console.log(media.toFixed(1));
+}
+
+</script>
