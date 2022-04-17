@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+
+do {
+    var [X, Y] = prompt("Digite os valores de X e Y:").split(" ");
+    var X = parseInt(X);
+    var Y = parseInt(Y);
+
+    if (X > 0 && Y > 0){
+        console.log("primeiro");
+    } else if (X < 0 && Y > 0) {
+        console.log("segundo");
+    } else if (X < 0 && Y < 0){
+        console.log("terceiro");
+    } else if (X > 0 && Y < 0){
+        console.log("quarto");
+    }
+} while (X !== 0 && Y !== 0);
+
+</script>
