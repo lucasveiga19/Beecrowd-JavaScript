@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+
+var entrada = parseInt(prompt("Digite o valor:"));
+
+for (cont=0; cont<entrada; cont++){
+    var [X, Y] = prompt("Digite os valores a serem dividos:").split(" ");
+    var X = parseFloat(X);
+    var Y = parseFloat(Y);
+
+    var divisao = (X/Y);
+
+    if (Y === 0){
+        console.log("divisao impossivel");
+    } else if (X === 0){
+        console.log("0.0");
+    } else {
+        console.log(divisao.toFixed(1));
+    }
+}
+
+</script>
