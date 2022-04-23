@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+var total = 0;
+var total2 = 0;
+
+while (total2 != 2){
+    var entrada = parseFloat(prompt("Digite o valor"));
+
+    if (entrada >= 0 && entrada <= 10){
+        total += entrada;
+        total2++;
+    } else {
+        console.log("nota invalida");
+    }
+}
+
+var media = total/2;
+console.log("media = "+media.toFixed(2));
+
+</script>
