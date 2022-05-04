@@ -1,0 +1,27 @@
+<script>
+
+var pares = 0;
+var impares = 0;
+var positivo = 0;
+var negativo = 0;
+for(cont = 0; cont < 5; cont++){
+    var entrada = parseFloat(prompt("Digite um valor:"));
+    if(entrada % 2 == 0){
+        pares++;
+    } 
+    if(entrada % 2 != 0){
+        impares++;
+    }
+    if(entrada > 0){
+        positivo++;
+    }
+    if(entrada < 0){
+        negativo++;
+    }
+}
+console.log(pares+" valor(es) par(es)");
+console.log(impares+" valor(es) impar(es)");
+console.log(positivo+" valor(es) positivo(s)");
+console.log(negativo+" valor(es) negativo(s)");
+
+</script>
