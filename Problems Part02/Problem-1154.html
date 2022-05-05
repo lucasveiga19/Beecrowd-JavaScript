@@ -1,0 +1,16 @@
+<script>
+
+var media = 0;
+var cont = 0;
+do{
+  var entrada = parseInt(prompt("Digite o valor:"));
+
+  if(entrada > 0){
+    media += entrada;
+    cont++;
+  }
+}while(entrada > 0);
+
+console.log((media/cont).toFixed(2));
+
+</script>
