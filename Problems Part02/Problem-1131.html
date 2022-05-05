@@ -1,0 +1,42 @@
+<script>
+
+var cont = 0;
+var interwin = 0;
+var gremiowin = 0;
+var empate = 0;
+do{
+    var [inter, gremio] = prompt("Digite os valores").split(" ");
+    var inter = parseInt(inter);
+    var gremio = parseInt(gremio);
+    
+    cont++;
+
+    if(inter > gremio){
+        interwin++;
+    } else if (gremio > inter){
+        gremiowin++;
+    } else if (gremio == inter){
+        empate++;
+    }
+
+    var repeticao = parseInt(prompt("Digite 1 ou 2:"));
+    console.log("Novo grenal (1-sim 2-nao)");
+    if(repeticao == 2){
+        break;
+    }
+
+}while(repeticao == 1);
+
+console.log(cont+" grenais");
+console.log("Inter:"+interwin);
+console.log("Gremio:"+gremiowin);
+console.log("Empates:"+empate);
+if(interwin > gremiowin){
+    console.log("Inter venceu mais");
+} else if (gremiowin > interwin){
+    console.log("Gremio venceu mais");
+} else if (gremiowin == interwin){
+    console.log("Nao houve vencedor");
+}
+
+</script>
