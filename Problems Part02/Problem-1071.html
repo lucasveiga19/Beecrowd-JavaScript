@@ -1,0 +1,21 @@
+<script>
+
+var x = parseFloat(prompt("Digite o valor"));
+var y = parseFloat(prompt("Digite o valor"));
+var impares = 0;
+
+for (cont = x; cont < y; cont++){
+    if(cont % 2 !== 0){
+        impares += cont;
+    }
+}
+
+for (cont = y+1; cont < x; cont++){
+    if(cont % 2 !== 0){
+        impares += cont;
+    }
+}
+
+console.log(impares);
+
+</script>
