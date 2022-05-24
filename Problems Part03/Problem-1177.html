@@ -1,0 +1,18 @@
+<script>
+
+var entrada = parseInt(prompt("Digite a entrada"));
+var vetor = [];
+var x = 0;
+
+
+for(i=0; i<1000; i++){
+    vetor[i] = x;
+    x++
+    if(x == entrada){
+        x = 0;
+    }
+
+    console.log("N["+i+"] = "+vetor[i]);
+}
+
+</script>
