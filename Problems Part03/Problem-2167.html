@@ -1,0 +1,23 @@
+<script>
+
+var entrada = parseInt(prompt("Digite a quantidade"));
+var vetor = new Array(entrada);
+var verificar = false;
+
+vetor = prompt("Valores").split(" ");
+
+for(i=0; i<entrada; i++){
+    vetor[i] = parseInt(vetor[i]);
+
+    if(vetor[i] > vetor[i+1]){
+        console.log(i+2);
+        verificar = true;
+        break;
+    }
+}
+
+if(verificar == false){
+    console.log(0);
+}
+
+</script>
