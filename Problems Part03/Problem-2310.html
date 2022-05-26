@@ -1,0 +1,39 @@
+<script>
+
+var entrada = parseInt(prompt("Digite a quantidade"));
+var totalS = 0;
+var totalB = 0;
+var totalA = 0;
+var totalS1 = 0;
+var totalB1 = 0;
+var totalA1 = 0;
+
+for(i=0; i<entrada; i++){
+    var nome = prompt("Seu nome");
+    var [S, B, A] = prompt("Digite os valores").split(" ");
+    var [S1, B1, A1] = prompt("Digite os valores").split(" ");
+
+    var S = parseInt(S);
+    var B = parseInt(B);
+    var A = parseInt(A);
+    var S1 = parseInt(S1);
+    var B1 = parseInt(B1);
+    var A1 = parseInt(A1);
+    
+    totalS += S;
+    totalB += B;
+    totalA += A;
+    totalS1 += S1;
+    totalB1 += B1;
+    totalA1 += A1;
+}
+
+var porcentagemS = (totalS1*100)/totalS;
+var porcentagemB = (totalB1*100)/totalB;
+var porcentagemA = (totalA1*100)/totalA;
+
+console.log("Pontos de Saque: "+porcentagemS.toFixed(2)+" %.");
+console.log("Pontos de Bloqueio: "+porcentagemB.toFixed(2)+" %.");
+console.log("Pontos de Ataque: "+porcentagemA.toFixed(2)+" %.");
+
+</script>
