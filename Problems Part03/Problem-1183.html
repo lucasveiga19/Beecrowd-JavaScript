@@ -1,0 +1,28 @@
+<script>
+
+var A = new Array(12);
+var soma = 0;
+var media = 0;
+var alternativa = prompt("Soma ou Média");
+
+for(i=0; i<12; i++){
+    A[i] = new Array(12);
+
+    for(j=0; j<12; j++){
+        A[i][j] = parseFloat(prompt("Digite o valor"));
+
+        if(i<j && alternativa == "S"){
+            soma += A[i][j];
+        } else if (i<j && alternativa == "M"){
+            media += A[i][j];
+        }
+    }
+}
+
+if(alternativa == "S"){
+    console.log(soma.toFixed(1));
+} else if (alternativa == "M"){
+    console.log((media/66.0).toFixed(1));
+}
+
+</script>
